@@ -1,0 +1,57 @@
+/*sintaxsis
+tipo selector{
+	propiedad: valor;
+	propiedad-2:valor;
+}*/
+
+
+/*selector universal*/
+
+* {
+    border: 1px solid red;
+    margin: 10px;
+}
+
+
+/*selector de etiqueda*/
+
+header {
+    background: blue;
+}
+
+section {
+    background: purple;
+}
+
+
+/*selector descendente, la base de CSS poner estilo a una seccion especifica*/
+
+article h3 {
+    color: green;
+}
+
+
+/*selectores de clase, requiere un atributo class*/
+
+.title-a {
+    background: yellow;
+}
+
+.title-b {
+    background: salmon;
+}
+
+
+/*selector de ID*/
+
+#header {
+	border: 3px solid black;
+}
+
+#portada {
+	border: 3px solid orange;
+}
+
+#guitarras {
+	border: 3px solid brown;
+}
