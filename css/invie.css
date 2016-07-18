@@ -190,6 +190,7 @@ textarea:focus {
 .menu li:before {
     content: '*';
     line-height: 20px;
+    color: white;
 }
 
 .menu a {
@@ -346,6 +347,9 @@ textarea:focus {
     margin-bottom: 80px;
 }
 
+.precios .header{
+    padding: 10px 10px;
+}
 
 /*Media querie dentro de la misma hoja de estilo*/
 
