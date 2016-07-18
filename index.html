@@ -7,10 +7,10 @@
     <!--esto muestra el titulo en los tabs del navegados-->
     <title>Invie - ¡tus mejores guitarra!</title>
     <!-- descarga fuentes en google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css' />
-    <link rel="stylesheet" type="text/css" href="css/invie.css" />
-    <!-- media querie en uns hoja de estilo diferente -->
-    <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
+    <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css' /> -->
+    <style>/*Critical Path CSS */ /*luego compress css*/
+      @font-face{font-family:'icomoon';src:url(../fonts/icomoon.eot?pinzw2);src:url(../fonts/icomoon.eot?pinzw2#iefix) format("embedded-opentype"),url(../fonts/icomoon.ttf?pinzw2) format("truetype"),url(../fonts/icomoon.woff?pinzw2) format("woff"),url(../fonts/icomoon.svg?pinzw2#icomoon) format("svg");font-weight:400;font-style:normal}[class*=" icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-menu:before{content:"\e9bd"}body{font-family:'Allerta',sans-serif;margin:0}table{width:100%}th{background:#273b47;color:#fff;padding:10px 20px;text-align:left}td{padding:20px}table,td,th{border:1px solid #273b47;border-collapse:collapse}input,textarea{outline:0}.contenedor{max-width:800px;margin:auto;position:relative}.background{background:#466173;background-image:url(../images/background.png);background-size:cover}.header{position:relative}.menu{font-size:24px;display:inline-block;position:absolute;right:0}.menu li{display:inline-block;margin-left:30px}.menu li:before{content:'*';line-height:20px;color:#fff}.menu a{color:#fff;text-decoration:none}.logotipo{margin-left:0;display:inline-block}.footer{background:#273b47;padding:50px}.contacto{display:flex;width:300px;flex-wrap:wrap;align-items:center;height:200px}.contacto img{display:block}.contacto strong{display:block}.contacto a{color:#fff;text-decoration:none;margin:10px 10px 10px 0}.footer .contenedor{display:flex;justify-content:space-between}.formulario{display:flex;width:400px;color:#fff}.col1,.col2{display:flex;flex-direction:column}.col1{margin-right:15px}.col2{align-items:flex-start}.intereses label{font-size:12px}.formulario label,.sexo,.intereses{margin-bottom:15px}.sexo{margin-top:15px}.tabla{margin:50px 0}.burguer-button{width:40px;border-radius:50%;line-height:40px;height:40px;background:#395667;display:inline-block;text-align:center;position:fixed;left:20px;top:20px;color:#fff;z-index:3;display:none}.precios .header{padding:10px}@media screen and (max-width: 800px){.tabla{margin:50px 20px}.tabla .contenedor{overflow:auto;border:1px solid #273B47}}@media screen and (max-width: 767px){.footer{padding:10px}.footer .contenedor{display:block}.contacto{margin:0 auto}.formulario{display:block;margin:0 auto;width:300px}.intereses label,.sexo label{display:block;font-size:16px}.col1{margin:0}input[type="text"],input[type="email"]{font-size:16px;padding:5px}textarea{width:100%}input[type="radio"],input[type="checkbox"]{zoom:1.5}.formulario .col2{align-items:stretch}}@media screen and (max-width: 650px){.header{text-align:center}.menu{position:static;display:block}.menu li:first-child{margin:0}.menu ul{padding:0}.logotipo{margin:0}}@media screen and (max-width: 520px){.precios .header .logotipo{margin:50px 0}.burguer-button{display:block}.menu{background:rgba(255,60,88,.8);position:fixed;left:-100%;top:0;z-index:2;bottom:0;right:0;display:flex;align-items:center;width:100%}.header{position:static}.header .contenedor{position:static}.menu ul{flex:1}.menu li{display:block;margin:0;padding:10px 0;border-bottom:1px solid #fff}.menu li:before{display:none}.menu li:first-child{border-top:1px solid #fff}}@media screen and (-webkit-min-device-pixel-ratio: 2){.background{background-image:url(../images/background2x.png)}}
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 </head>
 
@@ -140,11 +140,27 @@
             </form>
         </div>
     </footer>
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: { families: [ 'Montserrat:400,700:latin', 'Allerta::latin' ] }
+        };
+        (function() {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })(); 
+    </script>
     <!-- Permite descartar/usar la libreria be lazy -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.6.2/blazy.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js">
     </script>
     <script src="javascript/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/invie.css" />
+    <!-- media querie en uns hoja de estilo diferente -->
+    <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
 </body>
 
 </html>
